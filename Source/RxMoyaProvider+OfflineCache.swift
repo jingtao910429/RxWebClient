@@ -11,7 +11,7 @@ import RxSwift
 import Moya
 import Result
 
-protocol CacheProtocol {
+public protocol CacheProtocol {
     func readOffLineCache() -> Any?
 }
 

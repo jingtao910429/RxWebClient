@@ -11,9 +11,9 @@ import Foundation
 import RxSwift
 import Moya
 
-protocol LoadingViewProtocol {
-    func removeLoadingView()
-    func showLoadingView(view: UIView)
+public protocol LoadingViewProtocol {
+    func removeLoadingView(view: UIView)
+    func showLoadingView(view: UIView?)
 }
 
 extension Observable {
@@ -64,7 +64,7 @@ extension UIView {
             case .next(let value):
                 
                 guard value else {
-                    self.manager?.removeLoadingView()
+                    self.manager?.removeLoadingView(view: self)
                     return
                 }
                 
@@ -72,9 +72,9 @@ extension UIView {
                 
             case .error(let error):
                 print("Binding error to UI: \(error)")
-                self.manager?.removeLoadingView()
+                self.manager?.removeLoadingView(view: self)
             case .completed:
-                self.manager?.removeLoadingView()
+                self.manager?.removeLoadingView(view: self)
             }
         }
     }
