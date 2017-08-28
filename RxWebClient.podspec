@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RxWebClient"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Rx & Moya of RxWebClient."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   网络库封装
+                   兔博士网络库封装
                    DESC
 
   s.homepage     = "http://EXAMPLE/RxWebClient"
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "2Boss" => "" }
+  s.author             = { "2Boss" => "http://gw.2boss.cn" }
   # Or just: s.author    = "2Boss"
   # s.authors            = { "2Boss" => "" }
   # s.social_media_url   = "http://twitter.com/2Boss"
