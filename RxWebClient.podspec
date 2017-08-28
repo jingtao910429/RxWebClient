@@ -78,9 +78,8 @@ Pod::Spec.new do |s|
   #
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
-  #
-
-  s.source       = { :git => "https://github.com/jingtao910429/RxWebClient.git", :tag => "#{s.version}" }
+  # , :tag => "#{s.version}" 
+  s.source       = { :git => "https://github.com/jingtao910429/RxWebClient.git"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
