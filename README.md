@@ -1,12 +1,12 @@
 # RxWebClient
-Http WebClient
+兔博士 Http WebClient
 
 Tech:RxSwift+Moya+ObjectMapper 
 
-Observable+ObjectMapper
+Observable+ObjectMapper 可映射objectMapper
 
-RxMoyaProvider+ExceptionRequest
+RxMoyaProvider+ExceptionRequest 请求服务器返回不是标准json处理
 
-RxMoyaProvider+OfflineCache
+RxMoyaProvider+OfflineCache 缓存获取
 
-Observable+ShowLoading
+Observable+ShowLoading 视图加载
