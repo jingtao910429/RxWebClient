@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    兔博士网络库封装
                    DESC
 
-  s.homepage     = "http://EXAMPLE/RxWebClient"
+  s.homepage     = "https://github.com/jingtao910429/RxWebClient/tree/master/Example/RxWebClientExample"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
