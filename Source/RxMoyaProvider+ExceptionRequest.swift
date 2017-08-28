@@ -13,7 +13,7 @@ import ObjectMapper
 import Result
 import SwiftyJSON
 
-extension RxMoyaProvider {
+public extension RxMoyaProvider {
     func tryExceptionRequest<T: Any>(_ token: Target, _ type: T.Type) -> Observable<T> {
         return Observable.create { [weak self] observer -> Disposable in
             

@@ -15,7 +15,7 @@ public protocol CacheProtocol {
     func readOffLineCache() -> Any?
 }
 
-extension RxMoyaProvider {
+public extension RxMoyaProvider {
     func tryUseOfflineCacheThenRequest(_ token: Target, _ cacheProtocol: CacheProtocol) -> Observable<Moya.Response> {
         return Observable.create { [weak self] observer -> Disposable in
             

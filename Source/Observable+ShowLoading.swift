@@ -16,7 +16,7 @@ public protocol LoadingViewProtocol {
     func showLoadingView(view: UIView?)
 }
 
-extension Observable {
+public extension Observable {
     
     //加载视图
     func showLoading(activity: UIView, loadingManager: LoadingViewProtocol? , disposeBag: DisposeBag) -> Observable {
