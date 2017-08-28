@@ -2,7 +2,7 @@
 //  RxMoyaProvider+ExceptionRequest.swift
 //  rabbitDoctor
 //
-//  Created by 2Boss on 2017/8/2.
+//  Created by Mac on 2017/8/2.
 //  Copyright © 2017年 rabbitDoctor. All rights reserved.
 //
 
