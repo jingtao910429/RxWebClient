@@ -2,7 +2,7 @@
 //  Observable+ObjectMapper.swift
 //  RxSwift_Alamofire_ObjectMapper
 //
-//  Created by 2Boss on 2017/6/20.
+//  Created by PixelShi on 2017/6/20.
 //  Copyright © 2017年 sfmDev. All rights reserved.
 //
 

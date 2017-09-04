@@ -12,26 +12,7 @@
 		04416AFF1F5BE8D8005CEBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04416AFD1F5BE8D8005CEBBA /* Main.storyboard */; };
 		04416B011F5BE8D8005CEBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04416B001F5BE8D8005CEBBA /* Assets.xcassets */; };
 		04416B041F5BE8D8005CEBBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04416B021F5BE8D8005CEBBA /* LaunchScreen.storyboard */; };
-		04416B101F5BEDF6005CEBBA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04416B0F1F5BEDF6005CEBBA /* AssetsLibrary.framework */; };
-		04416B121F5BEE14005CEBBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04416B111F5BEE14005CEBBA /* CoreGraphics.framework */; };
-		04416B141F5BEE24005CEBBA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04416B131F5BEE24005CEBBA /* MobileCoreServices.framework */; };
-		04416B671F5CDD31005CEBBA /* RongCloudIMCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04416B611F5CDD31005CEBBA /* RongCloudIMCenterManager.m */; };
-		04416B681F5CDD31005CEBBA /* RongCloudIMDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04416B631F5CDD31005CEBBA /* RongCloudIMDataRequest.m */; };
-		452991200445AB5F6715E8AD /* Pods_RxWebClientExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7E297341166A50F7B85443 /* Pods_RxWebClientExample.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		04416B181F5BEE36005CEBBA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04416AF61F5BE8D8005CEBBA /* RxWebClientExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxWebClientExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,18 +22,6 @@
 		04416B001F5BE8D8005CEBBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04416B031F5BE8D8005CEBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04416B051F5BE8D8005CEBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04416B0F1F5BEDF6005CEBBA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		04416B111F5BEE14005CEBBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		04416B131F5BEE24005CEBBA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		04416B511F5C0186005CEBBA /* RxWebClientExample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RxWebClientExample-Bridging-Header.h"; sourceTree = "<group>"; };
-		04416B601F5CDD31005CEBBA /* RongCloudIMCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RongCloudIMCenterManager.h; sourceTree = "<group>"; };
-		04416B611F5CDD31005CEBBA /* RongCloudIMCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RongCloudIMCenterManager.m; sourceTree = "<group>"; };
-		04416B621F5CDD31005CEBBA /* RongCloudIMDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RongCloudIMDataRequest.h; sourceTree = "<group>"; };
-		04416B631F5CDD31005CEBBA /* RongCloudIMDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RongCloudIMDataRequest.m; sourceTree = "<group>"; };
-		04416B641F5CDD31005CEBBA /* RongCloudIMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RongCloudIMManager.h; sourceTree = "<group>"; };
-		88E5C36AF37C91038411A533 /* Pods-RxWebClientExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWebClientExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxWebClientExample/Pods-RxWebClientExample.debug.xcconfig"; sourceTree = "<group>"; };
-		9848E410A091218CA0E80D8E /* Pods-RxWebClientExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWebClientExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxWebClientExample/Pods-RxWebClientExample.release.xcconfig"; sourceTree = "<group>"; };
-		DE7E297341166A50F7B85443 /* Pods_RxWebClientExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWebClientExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04416B141F5BEE24005CEBBA /* MobileCoreServices.framework in Frameworks */,
-				04416B121F5BEE14005CEBBA /* CoreGraphics.framework in Frameworks */,
-				04416B101F5BEDF6005CEBBA /* AssetsLibrary.framework in Frameworks */,
-				452991200445AB5F6715E8AD /* Pods_RxWebClientExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,11 +38,8 @@
 		04416AED1F5BE8D8005CEBBA = {
 			isa = PBXGroup;
 			children = (
-				04416B511F5C0186005CEBBA /* RxWebClientExample-Bridging-Header.h */,
 				04416AF81F5BE8D8005CEBBA /* RxWebClientExample */,
 				04416AF71F5BE8D8005CEBBA /* Products */,
-				AA025EEF746217645BFCB194 /* Pods */,
-				506DCA7A1DDC8E9868572ADC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +54,6 @@
 		04416AF81F5BE8D8005CEBBA /* RxWebClientExample */ = {
 			isa = PBXGroup;
 			children = (
-				04416B5C1F5CDD31005CEBBA /* RongCloudIMManager */,
 				04416AF91F5BE8D8005CEBBA /* AppDelegate.swift */,
 				04416AFB1F5BE8D8005CEBBA /* ViewController.swift */,
 				04416AFD1F5BE8D8005CEBBA /* Main.storyboard */,
@@ -103,46 +64,6 @@
 			path = RxWebClientExample;
 			sourceTree = "<group>";
 		};
-		04416B5C1F5CDD31005CEBBA /* RongCloudIMManager */ = {
-			isa = PBXGroup;
-			children = (
-				04416B5F1F5CDD31005CEBBA /* Source */,
-			);
-			path = RongCloudIMManager;
-			sourceTree = "<group>";
-		};
-		04416B5F1F5CDD31005CEBBA /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				04416B601F5CDD31005CEBBA /* RongCloudIMCenterManager.h */,
-				04416B611F5CDD31005CEBBA /* RongCloudIMCenterManager.m */,
-				04416B621F5CDD31005CEBBA /* RongCloudIMDataRequest.h */,
-				04416B631F5CDD31005CEBBA /* RongCloudIMDataRequest.m */,
-				04416B641F5CDD31005CEBBA /* RongCloudIMManager.h */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		506DCA7A1DDC8E9868572ADC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				04416B131F5BEE24005CEBBA /* MobileCoreServices.framework */,
-				04416B111F5BEE14005CEBBA /* CoreGraphics.framework */,
-				04416B0F1F5BEDF6005CEBBA /* AssetsLibrary.framework */,
-				DE7E297341166A50F7B85443 /* Pods_RxWebClientExample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AA025EEF746217645BFCB194 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				88E5C36AF37C91038411A533 /* Pods-RxWebClientExample.debug.xcconfig */,
-				9848E410A091218CA0E80D8E /* Pods-RxWebClientExample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,13 +71,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04416B081F5BE8D8005CEBBA /* Build configuration list for PBXNativeTarget "RxWebClientExample" */;
 			buildPhases = (
-				3F8C382F967DE942D6DFA1E6 /* [CP] Check Pods Manifest.lock */,
 				04416AF21F5BE8D8005CEBBA /* Sources */,
 				04416AF31F5BE8D8005CEBBA /* Frameworks */,
 				04416AF41F5BE8D8005CEBBA /* Resources */,
-				733647453EFBF6AFAD2EB69D /* [CP] Embed Pods Frameworks */,
-				34C21DC098CFA8D1042E0DA6 /* [CP] Copy Pods Resources */,
-				04416B181F5BEE36005CEBBA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,7 +97,6 @@
 					04416AF51F5BE8D8005CEBBA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = E2MHYTRHEB;
-						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -216,89 +132,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		34C21DC098CFA8D1042E0DA6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxWebClientExample/Pods-RxWebClientExample-resources.sh",
-				"${PODS_ROOT}/RongCloudIMLibrary/RongCloudIM/Emoji.plist",
-				"${PODS_ROOT}/RongCloudIMLibrary/RongCloudIM/RCConfig.plist",
-				"${PODS_ROOT}/RongCloudIMLibrary/RongCloudIM/en.lproj",
-				"${PODS_ROOT}/RongCloudIMLibrary/RongCloudIM/zh-Hans.lproj",
-				$PODS_CONFIGURATION_BUILD_DIR/RongCloudIMLibrary/Resources.bundle,
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWebClientExample/Pods-RxWebClientExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3F8C382F967DE942D6DFA1E6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxWebClientExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		733647453EFBF6AFAD2EB69D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxWebClientExample/Pods-RxWebClientExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxWebClient/RxWebClient.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxWebClient.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxWebClientExample/Pods-RxWebClientExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		04416AF21F5BE8D8005CEBBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04416B671F5CDD31005CEBBA /* RongCloudIMCenterManager.m in Sources */,
 				04416AFC1F5BE8D8005CEBBA /* ViewController.swift in Sources */,
-				04416B681F5CDD31005CEBBA /* RongCloudIMDataRequest.m in Sources */,
 				04416AFA1F5BE8D8005CEBBA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,48 +259,27 @@
 		};
 		04416B091F5BE8D8005CEBBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88E5C36AF37C91038411A533 /* Pods-RxWebClientExample.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = E2MHYTRHEB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = RxWebClientExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiYou.RxWebClientExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RxWebClientExample-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		04416B0A1F5BE8D8005CEBBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9848E410A091218CA0E80D8E /* Pods-RxWebClientExample.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = E2MHYTRHEB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = RxWebClientExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiYou.RxWebClientExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RxWebClientExample-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -484,7 +302,6 @@
 				04416B0A1F5BE8D8005CEBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -5,7 +5,10 @@ source 'https://github.com/jingtao910429/2BossSpecs.git'
 
 target 'RxWebClientExample' do
 
+#    pod 'RongCloudIMManager'
+
     use_frameworks!
     pod 'RxWebClient'
-    
+
+
 end
