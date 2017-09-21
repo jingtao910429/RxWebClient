@@ -13,7 +13,7 @@ import Moya
 
 public protocol LoadingViewProtocol {
     func removeLoadingView(view: UIView)
-    func showLoadingView(view: UIView?)
+    func show(view: UIView?)
 }
 
 public extension Observable {
@@ -68,7 +68,7 @@ extension UIView {
                     return
                 }
                 
-                self.manager?.showLoadingView(view: self)
+                self.manager?.show(view: self)
                 
             case .error(let error):
                 print("Binding error to UI: \(error)")
