@@ -13,7 +13,7 @@ import Moya
 
 public protocol LoadingViewProtocol {
     func removeLoadingView(view: UIView)
-    func show(view: UIView?)
+    func show(view: UIView)
 }
 
 public extension Observable {
@@ -49,7 +49,7 @@ extension UIView {
                     self,
                     &AssociatedKeys.loadingViewKey,
                     newValue as LoadingViewProtocol?,
-                    .OBJC_ASSOCIATION_COPY_NONATOMIC
+                    .OBJC_ASSOCIATION_RETAIN_NONATOMIC
                 )
             }
         }

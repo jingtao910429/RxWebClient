@@ -13,7 +13,7 @@ PODS:
   - RxCocoa (3.3.1):
     - RxSwift (~> 3.3)
   - RxSwift (3.3.1)
-  - RxWebClient (0.0.5):
+  - RxWebClient (0.0.8):
     - Alamofire (~> 4.3)
     - Moya (~> 8.0.0)
     - Moya/RxSwift
@@ -33,7 +33,7 @@ SPEC CHECKSUMS:
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
   RxCocoa: 7dcb7a1860fc9cd0e23dae67ab105fc2916670b6
   RxSwift: 8fc9f2de6275a9101d518444e00bf32f1a42caac
-  RxWebClient: fa85f4355966b2c6ad3bf2a29f94c4b1044eaa1d
+  RxWebClient: ab3d2c94db4d2c845aa5a117722b762820ba4862
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
 PODFILE CHECKSUM: 4590d9d74f1be8da72d5e4f50e67cba71846a662
