@@ -28,7 +28,7 @@ struct networkErrorType {
 public extension RxMoyaProvider {
     
     func request(_ token: Target) -> Observable<Response> {
-        return self.request(token).asObservable()
+        return self.rx.request(token).asObservable()
     }
 }
 
