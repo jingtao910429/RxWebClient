@@ -25,6 +25,13 @@ struct networkErrorType {
     static let paraTypeError = (1009, "数据解析失败")
 }
 
+public extension RxMoyaProvider {
+    
+    func request(_ token: Target) -> Observable<Response> {
+        return self.request(token).asObservable()
+    }
+}
+
 extension Response {
     
     public func mapObject<T: BaseMappable>(_ type: T.Type) throws -> T {
