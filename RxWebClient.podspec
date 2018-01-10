@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RxWebClient"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "Rx & Moya of RxWebClient."
 
   # This description is used to generate tags and improve search results.
@@ -134,7 +134,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "Alamofire", "~> 4.3"
-  s.dependency "Moya", "~> 9.0.0"
+  s.dependency "Moya", "~> 8.0.0"
   s.dependency "Moya/RxSwift"
   s.dependency "RxSwift", "~> 3.3.0"
   s.dependency "RxCocoa", "~> 3.3.0"
