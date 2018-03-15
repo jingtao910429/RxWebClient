@@ -13,7 +13,7 @@ import Moya
 
 public protocol LoadingViewProtocol {
     func removeLoadingView(view: UIView)
-    func show(view: UIView)
+    func show(view: UIView?)
 }
 
 public extension Observable {
@@ -24,8 +24,8 @@ public extension Observable {
         let indicator = ActivityIndicator()
         activity.manager = loadingManager
         indicator.asObservable()
-            .bindTo(activity.rx_imageView_animating)
-            .addDisposableTo(disposeBag)
+            .bind(to: activity.rx_imageView_animating)
+            .disposed(by: disposeBag)
         
         return self.trackActivity(indicator)
     }
@@ -49,7 +49,7 @@ extension UIView {
                     self,
                     &AssociatedKeys.loadingViewKey,
                     newValue as LoadingViewProtocol?,
-                    .OBJC_ASSOCIATION_RETAIN_NONATOMIC
+                    .OBJC_ASSOCIATION_COPY_NONATOMIC
                 )
             }
         }

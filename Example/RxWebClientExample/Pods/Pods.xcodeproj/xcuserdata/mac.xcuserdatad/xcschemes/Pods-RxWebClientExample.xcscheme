@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AED7618B4379EB0FB0C286BD4D7A31C4"
+               BlueprintIdentifier = "49BEB734F51326FB7AD3AD5AB81890B8"
                BuildableName = "Pods_RxWebClientExample.framework"
                BlueprintName = "Pods-RxWebClientExample"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AED7618B4379EB0FB0C286BD4D7A31C4"
+            BlueprintIdentifier = "49BEB734F51326FB7AD3AD5AB81890B8"
             BuildableName = "Pods_RxWebClientExample.framework"
             BlueprintName = "Pods-RxWebClientExample"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -12,7 +12,6 @@ import RxSwift
 import Moya
 import Result
 import SwiftyJSON
-import RxWebClient
 
 class ViewController: UIViewController {
 

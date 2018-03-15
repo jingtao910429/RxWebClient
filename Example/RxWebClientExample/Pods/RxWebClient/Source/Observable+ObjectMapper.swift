@@ -2,8 +2,8 @@
 //  Observable+ObjectMapper.swift
 //  RxSwift_Alamofire_ObjectMapper
 //
-//  Created by PixelShi on 2017/6/20.
-//  Copyright © 2017年 sfmDev. All rights reserved.
+//  Created by Mac on 2017/6/20.
+//  Copyright © 2017年 rabbitDoctor. All rights reserved.
 //
 
 import Foundation
@@ -13,16 +13,12 @@ import ObjectMapper
 import Result
 import SwiftyJSON
 
-let KResultCode = "resultCode"
-let KErrorMsg = "errMsg"
-let KBody = "body"
+let KResultCode = "code"
+let KErrorMsg = "message"
 
 struct networkErrorType {
-    static let notSuccessfulHTTP = (1004, "请检查网络")
-    static let jsonToObjectError = (1005, "数据解析失败")
-    static let resultCodeInvalidate = (1006, "数据解析失败")
-    static let serverDataCodeError = (1007, "数据解析失败")
-    static let paraTypeError = (1009, "数据解析失败")
+    static let requestFail = (1004, "请检查网络")
+    static let praseError  = (1005, "数据解析异常")
 }
 
 extension Response {
@@ -62,27 +58,24 @@ extension ObservableType where E == Response {
 
                 // check http status
                 guard ((200...299) ~= response.statusCode) else {
-                     return Observable.error(ErrorFactory.createError(code: networkErrorType.notSuccessfulHTTP.0, errorMessage: networkErrorType.notSuccessfulHTTP.1))
+                     return Observable.error(ErrorFactory.createError(code: networkErrorType.requestFail.0, errorMessage: networkErrorType.requestFail.1))
                 }
                 
                 let json = JSON.init(data: response.data)
                 if let code = json[KResultCode].int {
                     let errorMsg = json[KErrorMsg].string
-                    if code == 0 {
-                        //设置返回body
+                    if code == 200 {
                         return Observable.just(object)
-                    } else {
-                        return Observable.error(ErrorFactory.createError(code: networkErrorType.serverDataCodeError.0, errorMessage: errorMsg ?? networkErrorType.serverDataCodeError.1))
                     }
+                    return Observable.error(ErrorFactory.createError(code: code, errorMessage: errorMsg ?? networkErrorType.praseError.1))
                 } else {
-                    // resultCode 异常
-                    return Observable.error(ErrorFactory.createError(code: networkErrorType.resultCodeInvalidate.0, errorMessage: networkErrorType.resultCodeInvalidate.1))
+                    return Observable.error(ErrorFactory.createError(code: networkErrorType.praseError.0, errorMessage: networkErrorType.praseError.1))
                 }
             } catch {
                 
                 switch error {
                 case MoyaError.jsonMapping(_):
-                    return Observable.error(ErrorFactory.createError(code: networkErrorType.jsonToObjectError.0, errorMessage: networkErrorType.jsonToObjectError.1))
+                    return Observable.error(ErrorFactory.createError(code: networkErrorType.praseError.0, errorMessage: networkErrorType.praseError.1))
                 default:
                     break
                 }
@@ -98,7 +91,7 @@ extension ObservableType where E == Response {
 
                 // check http status
                 guard ((200...299) ~= response.statusCode) else {
-                    return Observable.error(ErrorFactory.createError(code: networkErrorType.notSuccessfulHTTP.0, errorMessage: networkErrorType.notSuccessfulHTTP.1))
+                    return Observable.error(ErrorFactory.createError(code: networkErrorType.requestFail.0, errorMessage: networkErrorType.requestFail.1))
                 }
 
                 let json = JSON.init(data: response.data)
@@ -106,18 +99,16 @@ extension ObservableType where E == Response {
                     let errorMsg = json[KErrorMsg].string
                     if code == 0 {
                         return Observable.just(object)
-                    } else {
-                        return Observable.error(ErrorFactory.createError(code: networkErrorType.serverDataCodeError.0, errorMessage: errorMsg ?? networkErrorType.serverDataCodeError.1))
                     }
+                    return Observable.error(ErrorFactory.createError(code: code, errorMessage: errorMsg ?? networkErrorType.praseError.1))
                 } else {
-                    // resultCode 异常
-                    return Observable.error(ErrorFactory.createError(code: networkErrorType.resultCodeInvalidate.0, errorMessage: networkErrorType.resultCodeInvalidate.1))
+                    return Observable.error(ErrorFactory.createError(code: networkErrorType.praseError.0, errorMessage: networkErrorType.praseError.1))
                 }
             } catch {
                 
                 switch error {
                 case MoyaError.jsonMapping(_):
-                    return Observable.error(ErrorFactory.createError(code: networkErrorType.jsonToObjectError.0, errorMessage: networkErrorType.jsonToObjectError.1))
+                    return Observable.error(ErrorFactory.createError(code: networkErrorType.praseError.0, errorMessage: networkErrorType.praseError.1))
                 default:
                     break
                 }
@@ -139,7 +130,7 @@ extension ObservableType where E == Response {
                 
                 switch error {
                 case MoyaError.jsonMapping(_):
-                    return Observable.error(ErrorFactory.createError(code: networkErrorType.jsonToObjectError.0, errorMessage: networkErrorType.jsonToObjectError.1))
+                    return Observable.error(ErrorFactory.createError(code: networkErrorType.praseError.0, errorMessage: networkErrorType.praseError.1))
                 default:
                     break
                 }
@@ -151,7 +142,7 @@ extension ObservableType where E == Response {
 }
 
 class ErrorFactory {
-    class func createError(code: Int = 200, errorMessage message: String = "未知错误") -> Swift.Error {
+    class func createError(code: Int = 0, errorMessage message: String = "未知错误") -> Swift.Error {
         return NSError(domain: message, code: code, userInfo: nil) as Swift.Error
     }
 }

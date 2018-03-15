@@ -13,7 +13,7 @@ import ObjectMapper
 import Result
 import SwiftyJSON
 
-public extension RxMoyaProvider {
+public extension MoyaProvider {
     func tryExceptionRequest<T: Any>(_ token: Target, _ type: T.Type) -> Observable<T> {
         return Observable.create { [weak self] observer -> Disposable in
             
@@ -39,7 +39,7 @@ public extension RxMoyaProvider {
                     case .string where templateType.contains("string"):
                         observer.onNext(json.stringValue as! T)
                     default:
-                        observer.onError(ErrorFactory.createError(code: networkErrorType.paraTypeError.0, errorMessage: networkErrorType.paraTypeError.1))
+                        observer.onError(ErrorFactory.createError(code: networkErrorType.praseError.0, errorMessage: networkErrorType.praseError.1))
                     }
                     
                     observer.onCompleted()

@@ -15,6 +15,14 @@
 		04416B101F5BEDF6005CEBBA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04416B0F1F5BEDF6005CEBBA /* AssetsLibrary.framework */; };
 		04416B121F5BEE14005CEBBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04416B111F5BEE14005CEBBA /* CoreGraphics.framework */; };
 		04416B141F5BEE24005CEBBA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04416B131F5BEE24005CEBBA /* MobileCoreServices.framework */; };
+		045B93672058DD2A00A89835 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B93662058DD2A00A89835 /* Model.swift */; };
+		0496FDFB2058CAFA0059F30B /* RxMoyaProvider+OfflineCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496FDF62058CAFA0059F30B /* RxMoyaProvider+OfflineCache.swift */; };
+		0496FDFC2058CAFA0059F30B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496FDF72058CAFA0059F30B /* ActivityIndicator.swift */; };
+		0496FDFD2058CAFA0059F30B /* RxMoyaProvider+ExceptionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496FDF82058CAFA0059F30B /* RxMoyaProvider+ExceptionRequest.swift */; };
+		0496FDFE2058CAFA0059F30B /* Observable+ShowLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496FDF92058CAFA0059F30B /* Observable+ShowLoading.swift */; };
+		0496FDFF2058CAFA0059F30B /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496FDFA2058CAFA0059F30B /* Observable+ObjectMapper.swift */; };
+		0496FE022058CF410059F30B /* OutlandAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496FE002058CF410059F30B /* OutlandAPIService.swift */; };
+		0496FE032058CF410059F30B /* OutlandViewModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496FE012058CF410059F30B /* OutlandViewModelService.swift */; };
 		452991200445AB5F6715E8AD /* Pods_RxWebClientExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7E297341166A50F7B85443 /* Pods_RxWebClientExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +51,14 @@
 		04416B111F5BEE14005CEBBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		04416B131F5BEE24005CEBBA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		04416B511F5C0186005CEBBA /* RxWebClientExample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RxWebClientExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		045B93662058DD2A00A89835 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0496FDF62058CAFA0059F30B /* RxMoyaProvider+OfflineCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxMoyaProvider+OfflineCache.swift"; sourceTree = "<group>"; };
+		0496FDF72058CAFA0059F30B /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		0496FDF82058CAFA0059F30B /* RxMoyaProvider+ExceptionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxMoyaProvider+ExceptionRequest.swift"; sourceTree = "<group>"; };
+		0496FDF92058CAFA0059F30B /* Observable+ShowLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ShowLoading.swift"; sourceTree = "<group>"; };
+		0496FDFA2058CAFA0059F30B /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
+		0496FE002058CF410059F30B /* OutlandAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlandAPIService.swift; sourceTree = "<group>"; };
+		0496FE012058CF410059F30B /* OutlandViewModelService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlandViewModelService.swift; sourceTree = "<group>"; };
 		88E5C36AF37C91038411A533 /* Pods-RxWebClientExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWebClientExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxWebClientExample/Pods-RxWebClientExample.debug.xcconfig"; sourceTree = "<group>"; };
 		9848E410A091218CA0E80D8E /* Pods-RxWebClientExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxWebClientExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxWebClientExample/Pods-RxWebClientExample.release.xcconfig"; sourceTree = "<group>"; };
 		DE7E297341166A50F7B85443 /* Pods_RxWebClientExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxWebClientExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +101,10 @@
 		04416AF81F5BE8D8005CEBBA /* RxWebClientExample */ = {
 			isa = PBXGroup;
 			children = (
+				045B93662058DD2A00A89835 /* Model.swift */,
+				0496FE002058CF410059F30B /* OutlandAPIService.swift */,
+				0496FE012058CF410059F30B /* OutlandViewModelService.swift */,
+				0496FDF52058CAFA0059F30B /* Source */,
 				04416AF91F5BE8D8005CEBBA /* AppDelegate.swift */,
 				04416AFB1F5BE8D8005CEBBA /* ViewController.swift */,
 				04416AFD1F5BE8D8005CEBBA /* Main.storyboard */,
@@ -93,6 +113,19 @@
 				04416B051F5BE8D8005CEBBA /* Info.plist */,
 			);
 			path = RxWebClientExample;
+			sourceTree = "<group>";
+		};
+		0496FDF52058CAFA0059F30B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0496FDF62058CAFA0059F30B /* RxMoyaProvider+OfflineCache.swift */,
+				0496FDF72058CAFA0059F30B /* ActivityIndicator.swift */,
+				0496FDF82058CAFA0059F30B /* RxMoyaProvider+ExceptionRequest.swift */,
+				0496FDF92058CAFA0059F30B /* Observable+ShowLoading.swift */,
+				0496FDFA2058CAFA0059F30B /* Observable+ObjectMapper.swift */,
+			);
+			name = Source;
+			path = ../../../Source;
 			sourceTree = "<group>";
 		};
 		506DCA7A1DDC8E9868572ADC /* Frameworks */ = {
@@ -242,7 +275,6 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxWebClient/RxWebClient.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -253,7 +285,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxWebClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,8 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0496FDFD2058CAFA0059F30B /* RxMoyaProvider+ExceptionRequest.swift in Sources */,
+				0496FDFC2058CAFA0059F30B /* ActivityIndicator.swift in Sources */,
 				04416AFC1F5BE8D8005CEBBA /* ViewController.swift in Sources */,
+				0496FDFF2058CAFA0059F30B /* Observable+ObjectMapper.swift in Sources */,
+				0496FE032058CF410059F30B /* OutlandViewModelService.swift in Sources */,
+				045B93672058DD2A00A89835 /* Model.swift in Sources */,
+				0496FE022058CF410059F30B /* OutlandAPIService.swift in Sources */,
 				04416AFA1F5BE8D8005CEBBA /* AppDelegate.swift in Sources */,
+				0496FDFE2058CAFA0059F30B /* Observable+ShowLoading.swift in Sources */,
+				0496FDFB2058CAFA0059F30B /* RxMoyaProvider+OfflineCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
