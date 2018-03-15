@@ -27,9 +27,9 @@ Pod::Spec.new do |s|
 
   s.dependency "Alamofire", "~> 4.3"
   s.dependency "Moya", "~> 11.0"
-  s.dependency "Moya/RxSwift", "~> 11.0"
-  s.dependency "RxSwift", "~> 3.3.0"
-  s.dependency "RxCocoa", "~> 3.3.0"
+  s.dependency "Moya/RxSwift"
+  s.dependency "RxSwift", "~> 4.0"
+  s.dependency "RxCocoa", "~> 4.0"
   s.dependency "SwiftyJSON", "~> 3.1.4"
   s.dependency "ObjectMapper", "~> 2.0.0"
 
